@@ -364,3 +364,4 @@ FodyWeavers.xsd
 AgricolaMVC/packages/Microsoft.AspNet.WebPages.3.2.7/lib/net45/es/system.web.helpers.xml
 *.dll
 AgricolaData/AgricolaData.csproj
+AGROFACIL/
