@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNet.Identity
+<div class="right menu">
+    @if (HttpContext.Current.Session["_IdUsuario"] != null)
+    {
+
+
+    
+        using (Html.BeginForm("LogOff", "Seguridad", FormMethod.Post, new { id = "logoutForm", @class = "hidden" }))
+        {
+            @Html.AntiForgeryToken()
+        }
+    }
+    else
+    {
+        @Html.ActionLink("Iniciar Sesión", "Login", "Seguridad", htmlAttributes: new { id = "loginLink", @class = "item" })
+    }
+</div>
+

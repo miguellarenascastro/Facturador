@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNet.Identity
+<div class="right menu">
+  
+
+    <div class="ui dropdown item">
+        <i class="user alternate circle icon"></i> Usuario
+        <i class="dropdown icon"></i>
+        <div class="menu">
+            @Html.ActionLink("Ver Usuarios", "ListarUsuarios", "Seguridad", new { area = "" }, new { @class = "item" })
+            @Html.ActionLink("Crear Usuarios", "ListarRoles", "Seguridad", new { area = "" }, new { @class = "item" })
+
+     
+        </div>
+    </div>
+      
+ 
+ 
+</div>
+

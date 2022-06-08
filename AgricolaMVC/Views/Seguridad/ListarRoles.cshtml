@@ -1,0 +1,74 @@
+﻿@model AgricolaData.ViewModel.ListarRolesViewModel
+
+
+@{ ViewBag.Title = "Haciendas"; }
+@using (Html.BeginForm("ListarRoles", "Seguridad", FormMethod.Get, new { @class = "ui row" }))
+{
+    <div class="sixteen wide column" style="padding: 35px">
+        @*<div class="ui menu">
+                <h2>@ViewBag.Title</h2>
+            </div>*@
+
+        @*@Html.HiddenFor(m => m.Haciendas)*@
+
+        <div class="ui raised segments">
+            <div class="ui menu">
+                <div class="item">
+                    Roles
+                </div>
+     
+                <div class="item">
+                    <a href="@Url.Action("RegistrarRoll")" class="ui tiny green icon button">
+                        <i class="plus icon"></i> Registrar Roll
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="ui bottom attached raised segment">
+
+                <table class="ui small selectable celled table center aligned datatable">
+                    <thead>
+                        <tr class="centered">
+
+                            <th>@Html.DisplayNameFor(model => model.Roles[0].Name)</th>
+                            <th>@Html.DisplayNameFor(model => model.Roles[0].Descripcion)</th>
+                            <th>@Html.DisplayNameFor(model => model.Roles[0].Plural)</th>
+                            <th>@Html.DisplayNameFor(model => model.Roles[0].Prioridad)</th>
+                            <th>Acciones</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.Roles)
+                        {
+                        <tr class="centered">
+
+                            <td>@item.Name</td>
+                            <td>@item.Descripcion</td>
+                            <td>@item.Plural</td>
+                            <td>@item.Prioridad</td>
+                            <td>
+                                <div class="ui tiny buttons">
+                                    <a href="@Url.Action("EditarRoles", new {IdRoll = item.Id})" class="ui tiny green icon button">
+                                        <i class="edit icon"></i> Editar
+                                    </a>
+
+                                    <a href="@Url.Action("EliminarRoles", new {IdRoll = item.Id})" class="ui tiny red icon button">
+                                        <i class="trash icon"></i> Eliminar
+                                    </a>
+                                </div>
+
+                            </td>
+
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+

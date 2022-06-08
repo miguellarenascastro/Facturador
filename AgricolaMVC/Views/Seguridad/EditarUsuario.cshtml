@@ -1,0 +1,63 @@
+﻿@model AgricolaData.ViewModel.UsuarioViewModel
+@{
+    ViewBag.Title = "Editar Usuario";
+}
+
+
+@using (Html.BeginForm("EditarUsuario", "Seguridad", FormMethod.Post, new { @class = "" }))
+{
+    <div class="ui row">
+        <div class="ui six wide column">
+
+            <div class="ui menu">
+                <h1>@ViewBag.Title</h1>
+            </div>
+            @Html.HiddenFor(m => m.IdUsuario)
+            <div class="ui raised segment form">
+
+                <div class="fields">
+                    <div class="field">
+                        @Html.LabelFor(model => model.Nombres)
+                        @Html.TextBoxFor(model => model.Nombres)
+                        @Html.ValidationMessageFor(model => model.Nombres)
+                    </div>
+
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Apellidos)
+                        @Html.TextBoxFor(model => model.Apellidos)
+                        @Html.ValidationMessageFor(model => model.Apellidos)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Identificacio)
+                        @Html.TextBoxFor(model => model.Identificacio)
+                        @Html.ValidationMessageFor(model => model.Identificacio)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.UserName)
+                        @Html.TextBoxFor(model => model.UserName)
+                        @Html.ValidationMessageFor(model => model.UserName)
+                    </div>
+
+
+
+                </div>
+
+
+                @Html.ActionLink("Regresar", "ListarUsuarios", "Seguridad", null, new { @class = "ui button" })
+                <button type="submit" class="ui primary icon button">
+                    <i class="save icon"></i> Guardar
+                </button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+}
+

@@ -1,0 +1,60 @@
+﻿@model AgricolaData.ViewModel.RollViewModel
+@{
+    ViewBag.Title = "Editar Usuario";
+}
+
+<h2>Registrar Empleados</h2>
+
+@using (Html.BeginForm("EditarRoll", "Seguridad", FormMethod.Post, new { @class = "" }))
+{
+    <div class="ui row">
+        <div class="ui six wide column">
+            @Html.HiddenFor(m => m.IdRoll)
+            <div class="ui raised segment form">
+
+                <div class="fields">
+                    <div class="field">
+                        @Html.LabelFor(model => model.Nombre)
+                        @Html.TextBoxFor(model => model.Nombre)
+                        @Html.ValidationMessageFor(model => model.Nombre)
+                    </div>
+
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Descripcion)
+                        @Html.TextBoxFor(model => model.Descripcion)
+                        @Html.ValidationMessageFor(model => model.Descripcion)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Plural)
+                        @Html.TextBoxFor(model => model.Plural)
+                        @Html.ValidationMessageFor(model => model.Plural)
+                    </div>
+
+                    <div class="field">
+                        @Html.LabelFor(model => model.Prioridad)
+                        @Html.TextBoxFor(model => model.Prioridad)
+                        @Html.ValidationMessageFor(model => model.Prioridad)
+                    </div>
+
+
+                </div>
+
+
+
+                @Html.ActionLink("Regresar", "ListarUsuarios", "Seguridad", null, new { @class = "ui button" })
+                <button type="submit" class="ui primary icon button">
+                    <i class="save icon"></i> Guardar
+                </button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+}
+
