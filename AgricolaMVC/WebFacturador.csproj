@@ -3013,13 +3013,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Agricola.Seguridad\Agricola.Seguridad.csproj">
+    <ProjectReference Include="..\Agricola.Seguridad\Facturador.Seguridad.csproj">
       <Project>{cf366b4c-8691-495b-8ced-f2c9ea274eba}</Project>
-      <Name>Agricola.Seguridad</Name>
+      <Name>Facturador.Seguridad</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AgricolaData\AgricolaData.csproj">
+    <ProjectReference Include="..\AgricolaData\FacturadorData.csproj">
       <Project>{8f21e38d-f195-4cc9-a3f2-d7fd2f68f61a}</Project>
-      <Name>AgricolaData</Name>
+      <Name>FacturadorData</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

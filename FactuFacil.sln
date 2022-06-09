@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAgricola", "AgricolaMVC\WebAgricola.csproj", "{B7F0AE1A-DF6D-4E7F-A20D-F920C089525E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFacturador", "AgricolaMVC\WebFacturador.csproj", "{B7F0AE1A-DF6D-4E7F-A20D-F920C089525E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgricolaData", "AgricolaData\AgricolaData.csproj", "{8F21E38D-F195-4CC9-A3F2-D7FD2F68F61A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacturadorData", "AgricolaData\FacturadorData.csproj", "{8F21E38D-F195-4CC9-A3F2-D7FD2F68F61A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agricola.Seguridad", "Agricola.Seguridad\Agricola.Seguridad.csproj", "{CF366B4C-8691-495B-8CED-F2C9EA274EBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facturador.Seguridad", "Agricola.Seguridad\Facturador.Seguridad.csproj", "{CF366B4C-8691-495B-8CED-F2C9EA274EBA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiRest", "WebApiRest\WebApiRest.csproj", "{3349D55C-C226-4036-B530-D8EBEAC13BA2}"
 EndProject
