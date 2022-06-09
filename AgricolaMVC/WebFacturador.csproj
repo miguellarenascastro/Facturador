@@ -316,6 +316,7 @@
     <Content Include="Content\Imagenes\Herramientas.jpg" />
     <Content Include="Content\Imagenes\Home.jpg" />
     <Content Include="Content\Imagenes\Inventario.png" />
+    <Content Include="Content\Imagenes\LogoInicio.jpg" />
     <Content Include="Content\Imagenes\Nomina.png" />
     <Content Include="Content\Imagenes\Produccion.png" />
     <Content Include="Content\Imagenes\Reporteria.png" />
