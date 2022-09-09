@@ -161,7 +161,7 @@ namespace AgricolaData.Entities
         public long? IdTipoDocumentoModificado { set; get; }
         public string ComprobanteModifica { set; get; }
         public string RazonModificacion { set; get; }
-
+        public string ClaveAccesoSri { set; get; }
 
 
         public virtual Persona Persona { set; get; }
